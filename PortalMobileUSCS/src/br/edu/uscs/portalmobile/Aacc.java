@@ -7,7 +7,6 @@ import com.j256.ormlite.table.DatabaseTable;
 public class Aacc {
 
 	@DatabaseField(id = true)
-	
 	private int id_aacc;
 
 	@DatabaseField(columnName = "id_estudante", canBeNull = false, foreign = true)
