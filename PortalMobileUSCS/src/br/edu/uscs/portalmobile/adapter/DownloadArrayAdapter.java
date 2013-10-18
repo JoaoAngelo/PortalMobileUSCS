@@ -2,13 +2,13 @@ package br.edu.uscs.portalmobile.adapter;
 
 import java.util.ArrayList;
 
+import android.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import br.edu.uscs.portalmobile.R;
 
 public class DownloadArrayAdapter extends BaseAdapter {
 	private final Context context;
@@ -53,5 +53,5 @@ public class DownloadArrayAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		return position;
 	}
-	
+
 }

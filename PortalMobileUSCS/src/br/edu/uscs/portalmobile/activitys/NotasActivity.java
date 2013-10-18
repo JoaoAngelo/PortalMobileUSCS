@@ -2,19 +2,19 @@ package br.edu.uscs.portalmobile.activitys;
 
 import java.util.ArrayList;
 
+import android.R;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ListView;
 import br.edu.uscs.portalmobile.CursoDisciplina;
 import br.edu.uscs.portalmobile.Disciplina;
 import br.edu.uscs.portalmobile.Nota;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.adapter.NotasArrayAdapter;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 
 /**
@@ -46,21 +46,12 @@ public class NotasActivity extends SherlockActivity {
 		RuntimeExceptionDao<CursoDisciplina, Integer> cursoDisciplinaDao = ORMLiteHelper.getInstance(getApplicationContext()).getCursoDisciplinaRuntimeDao();
 
 		for (Nota nota : notasDao.queryForAll()) {
-			
+
 			cursoDisciplinaDao.refresh(nota.getCursodisciplina());
 			disciplinaDao.refresh(nota.getCursodisciplina().getDisciplina());
-			
+
 			// Nome da Disciplina, Faltas, Limite de Faltas
-			values.add(new String[] { 
-							nota.getCursodisciplina().getDisciplina().getNomeDisciplina(),
-							Double.toString(nota.getAproveitamento()),
-							Double.toString(nota.getProva()),
-							Double.toString(nota.getSubstitutiva()),
-							Double.toString(nota.getTotalPontos()),
-							Double.toString(nota.getReavaliacao()),
-							Double.toString(nota.getMediaFinal()),
-							nota.getResultadoFinal()
-			});
+			values.add(new String[] { nota.getCursodisciplina().getDisciplina().getNomeDisciplina(), Double.toString(nota.getAproveitamento()), Double.toString(nota.getProva()), Double.toString(nota.getSubstitutiva()), Double.toString(nota.getTotalPontos()), Double.toString(nota.getReavaliacao()), Double.toString(nota.getMediaFinal()), nota.getResultadoFinal() });
 
 		}
 		Log.i("notas", "Dados de notas carregados com sucesso.");

@@ -19,6 +19,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -29,7 +30,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.libs.DetectaConexao;
 import br.edu.uscs.portalmobile.libs.Mensagem;
 import br.edu.uscs.portalmobile.libs.UserFunctions;

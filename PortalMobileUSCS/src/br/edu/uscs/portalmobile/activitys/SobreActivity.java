@@ -1,11 +1,11 @@
 package br.edu.uscs.portalmobile.activitys;
 
+import android.R;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import br.edu.uscs.portalmobile.R;
+import android.view.MenuItem;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 
 /**
  * Created by Joao on 02/07/13.

@@ -3,6 +3,7 @@ package br.edu.uscs.portalmobile.activitys;
 import java.sql.SQLException;
 import java.util.List;
 
+import android.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import br.edu.uscs.portalmobile.Estudante;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 import br.edu.uscs.portalmobile.libs.UserFunctions;
 

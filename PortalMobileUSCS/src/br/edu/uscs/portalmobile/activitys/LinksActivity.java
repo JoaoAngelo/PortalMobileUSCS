@@ -6,22 +6,17 @@ package br.edu.uscs.portalmobile.activitys;
 
 import java.util.ArrayList;
 
-import android.content.Intent;
-import android.net.Uri;
+import android.R;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
+import android.view.MenuItem;
 import android.widget.ListView;
 import br.edu.uscs.portalmobile.Link;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.adapter.LinkArrayAdapter;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 
 public class LinksActivity extends SherlockActivity {
@@ -45,7 +40,7 @@ public class LinksActivity extends SherlockActivity {
 		ArrayList<String[]> values = new ArrayList<String[]>();
 
 		RuntimeExceptionDao<Link, Integer> linkDao = ORMLiteHelper.getInstance(getApplicationContext()).getLinkRuntimeDao();
-		
+
 		for (Link link : linkDao.queryForAll()) {
 
 			// Nome do estudante, email do estudante

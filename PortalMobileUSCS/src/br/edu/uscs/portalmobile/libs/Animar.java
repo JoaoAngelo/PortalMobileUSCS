@@ -1,6 +1,5 @@
 package br.edu.uscs.portalmobile.libs;
 
-import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 import android.view.View;
 import android.view.animation.TranslateAnimation;
 

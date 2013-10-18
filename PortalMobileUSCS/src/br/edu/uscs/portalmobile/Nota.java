@@ -23,7 +23,7 @@ public class Nota {
 
 	@DatabaseField
 	private double substitutiva;
-	
+
 	@DatabaseField
 	private double totalPontos;
 
@@ -52,7 +52,6 @@ public class Nota {
 		this.mediaFinal = mediaFinal;
 		this.resultadoFinal = resultadoFinal;
 	}
-
 
 	public int getId_nota() {
 		return id_nota;

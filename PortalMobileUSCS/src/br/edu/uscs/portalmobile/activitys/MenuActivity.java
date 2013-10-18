@@ -2,22 +2,22 @@ package br.edu.uscs.portalmobile.activitys;
 
 import java.util.Date;
 
+import android.R;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import br.edu.uscs.portalmobile.Estudante;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.libs.FuncoesData;
 import br.edu.uscs.portalmobile.libs.Mensagem;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 import br.edu.uscs.portalmobile.libs.UserFunctions;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 
 public class MenuActivity extends SherlockActivity {

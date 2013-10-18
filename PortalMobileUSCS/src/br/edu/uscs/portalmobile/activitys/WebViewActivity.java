@@ -4,10 +4,10 @@ package br.edu.uscs.portalmobile.activitys;
  * Created by Joao on 01/07/13.
  */
 
+import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
-import br.edu.uscs.portalmobile.R;
 
 public class WebViewActivity extends Activity {
 

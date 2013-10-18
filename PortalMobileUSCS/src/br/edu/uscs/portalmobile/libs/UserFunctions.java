@@ -306,15 +306,9 @@ public class UserFunctions {
 			for (int d = 0; d < json_download.length(); d++) {
 
 				disciplina_professor = disciplinaProfessorRuntimeDao.queryForId(json_download.getJSONObject(d).getInt("id_disciplina_professor"));
-				
+
 				// Cria instância à ser inserida no banco de dados pela DAO
-				download = new Download(
-							json_download.getJSONObject(d).getInt("id_download"),
-							disciplina_professor,
-							json_download.getJSONObject(d).getString("descricao_download"),
-							json_download.getJSONObject(d).getString("url"),
-							json_download.getJSONObject(d).getString("data_insercao")							
-							);
+				download = new Download(json_download.getJSONObject(d).getInt("id_download"), disciplina_professor, json_download.getJSONObject(d).getString("descricao_download"), json_download.getJSONObject(d).getString("url"), json_download.getJSONObject(d).getString("data_insercao"));
 				// Insere no banco de dados
 				downloadRuntimeDao.create(download);
 

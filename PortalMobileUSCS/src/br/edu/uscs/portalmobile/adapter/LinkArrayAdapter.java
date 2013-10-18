@@ -2,6 +2,7 @@ package br.edu.uscs.portalmobile.adapter;
 
 import java.util.ArrayList;
 
+import android.R;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -11,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import br.edu.uscs.portalmobile.R;
 
 public class LinkArrayAdapter extends BaseAdapter {
 	private final Context context;
@@ -36,15 +36,14 @@ public class LinkArrayAdapter extends BaseAdapter {
 		// Adiciona email do estudante na lista
 		TextView txtURL = (TextView) rowView.findViewById(R.link.txtURL);
 		txtURL.setText(values.get(position)[1]);
-				rowView.setFocusableInTouchMode(true);
+		rowView.setFocusableInTouchMode(true);
 		rowView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 
-				Intent i = new Intent(Intent.ACTION_VIEW,
-				Uri.parse(values.get(position)[1]));
+				Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(values.get(position)[1]));
 				context.startActivity(i);
-				
+
 				Log.e("OnClick do Link mano", "ID: " + values.get(position)[0] + " Position: " + values.get(position)[1]);
 
 			}

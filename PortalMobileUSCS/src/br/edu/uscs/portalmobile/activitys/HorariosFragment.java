@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.R;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +16,6 @@ import br.edu.uscs.portalmobile.DisciplinaProfessor;
 import br.edu.uscs.portalmobile.GradeHoraria;
 import br.edu.uscs.portalmobile.Pessoa;
 import br.edu.uscs.portalmobile.Professor;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.adapter.HorariosArrayAdapter;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 

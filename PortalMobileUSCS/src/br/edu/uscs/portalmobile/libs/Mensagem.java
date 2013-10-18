@@ -1,5 +1,6 @@
 package br.edu.uscs.portalmobile.libs;
 
+import android.R;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,7 +8,6 @@ import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.widget.Toast;
-import br.edu.uscs.portalmobile.R;
 
 public class Mensagem {
 

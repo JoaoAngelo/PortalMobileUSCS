@@ -2,19 +2,19 @@ package br.edu.uscs.portalmobile.activitys;
 
 import java.util.ArrayList;
 
+import android.R;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ListView;
 import br.edu.uscs.portalmobile.Disciplina;
 import br.edu.uscs.portalmobile.DisciplinaProfessor;
 import br.edu.uscs.portalmobile.Falta;
-import br.edu.uscs.portalmobile.R;
 import br.edu.uscs.portalmobile.adapter.FaltasArrayAdapter;
 import br.edu.uscs.portalmobile.libs.ORMLiteHelper;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 
 public class FaltasActivity extends SherlockActivity {

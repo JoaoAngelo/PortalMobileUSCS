@@ -1,13 +1,13 @@
 package br.edu.uscs.portalmobile.activitys;
 
+import android.R;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
-import br.edu.uscs.portalmobile.R;
+import android.view.MenuItem;
 import br.edu.uscs.portalmobile.libs.FuncoesData;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.viewpagerindicator.PageIndicator;
 import com.viewpagerindicator.TitlePageIndicator;
 
