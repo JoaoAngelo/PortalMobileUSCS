@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<br.edu.uscs.portalmobile.libs.DashboardLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/branco_uscs">
+
+    <!--  Notas Button -->
+    <Button
+            android:id="@+id/btn_notas"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_notas"
+            android:text="@string/notas"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Faltas Button -->
+    <Button
+            android:id="@+id/btn_faltas"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_faltas"
+            android:text="@string/faltas"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Grade Button -->
+    <Button
+            android:id="@+id/btn_grade"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_grade"
+            android:text="@string/grade_horario"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Turma Button -->
+    <Button
+            android:id="@+id/btn_turma"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_turma"
+            android:text="@string/minha_turma"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Professores Button -->
+    <Button
+            android:id="@+id/btn_professores"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_professores"
+            android:text="@string/professores"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Downloads Button -->
+    <Button
+            android:id="@+id/btn_downloads"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_downloads"
+            android:text="@string/download"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Links Button -->
+    <Button
+            android:id="@+id/btn_links"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_links"
+            android:text="@string/links"
+        	android:textColor="@color/azul_uscs"/>
+
+    <!--  Sobre Button -->
+    <Button
+            android:id="@+id/btn_sobre"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/btn_sobre"
+            android:text="@string/sobre"
+        	android:textColor="@color/azul_uscs"/>
+
+</br.edu.uscs.portalmobile.libs.DashboardLayout>

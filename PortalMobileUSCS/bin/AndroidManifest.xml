@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.uscs.portalmobile"
+    android:versionCode="3"
+    android:versionName="1.01" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <!-- Permissões Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissões Status da Internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Uscs" >
+        <activity
+            android:name=".activitys.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Uscs" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Uscs" >
+        </activity>
+
+        <!-- Menu Activity -->
+        <activity
+            android:name=".activitys.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Faltas Activity -->
+        <activity
+            android:name=".activitys.FaltasActivity"
+            android:label="Faltas"
+            android:logo="@drawable/btn_faltas"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Notas Activity -->
+
+        <activity
+            android:name=".activitys.NotasActivity"
+            android:label="Notas"
+            android:logo="@drawable/btn_notas"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Horaria Activity -->
+        <activity
+            android:name=".activitys.HorariosActivity"
+            android:label="Grade Horarios"
+            android:logo="@drawable/btn_grade"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Professores Activity -->
+        <activity
+            android:name=".activitys.ProfessoresActivity"
+            android:label="Professores"
+            android:logo="@drawable/btn_professores"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Downloads Activity -->
+        <activity
+            android:name=".activitys.DownloadActivity"
+            android:label="Downloads"
+            android:logo="@drawable/btn_downloads"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Turma Activity -->
+        <activity
+            android:name=".activitys.TurmaActivity"
+            android:label="Minha Turma"
+            android:logo="@drawable/btn_turma"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Links Activity -->
+        <activity
+            android:name=".activitys.LinksActivity"
+            android:label="Links"
+            android:logo="@drawable/btn_links"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+
+        <!-- Sobre Activity -->
+        <activity
+            android:name=".activitys.SobreActivity"
+            android:label="Sobre"
+            android:logo="@drawable/btn_sobre"
+            android:parentActivityName=".activitys.MenuActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activitys.MenuActivity" />
+        </activity>
+    </application>
+
+</manifest>

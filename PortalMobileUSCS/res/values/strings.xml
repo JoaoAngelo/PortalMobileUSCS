@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Strings -->
+    <string name="app_name">Portal Mobile USCS</string>
+    <string name="action_settings">Configurações</string>
+    <string name="login_upcase">LOGIN</string>
+    <string name="matricula">Matrícula</string>
+    <string name="matricula_hint">Digite sua matrícula</string>
+    <string name="senha">Senha</string>
+    <string name="senha_hint">Digite sua senha</string>
+    <string name="login">Login</string>
+    <string name="logar">Logar</string>
+    <string name="logout">Logout</string>
+    <string name="recuperar_senha">Recuperar senha!</string>
+    <string name="notas">Notas</string>
+    <string name="faltas">Faltas</string>
+    <string name="grade_horario">Horários</string>
+    <string name="download">Download</string>
+    <string name="professores">Professores</string>
+    <string name="links">Links</string>
+    <string name="sobre">Sobre</string>
+    <string name="minha_turma">Turma</string>
+    <string name="ok">OK</string>
+    <string name="aacc">AACC</string>
+    <string name="sair">Sair</string>
+    <string name="limite_faltas">Limite de Faltas:   </string>
+    <string name="site_uscs">www.uscs.edu.br</string>
+
+</resources>

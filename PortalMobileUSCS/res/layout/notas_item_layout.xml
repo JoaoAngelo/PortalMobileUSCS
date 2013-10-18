@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+notas/txtDisciplina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.70"
+                android:text="Descrição Disciplina"
+                android:textColor="#ff29549f" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:padding="2dp"
+            android:background="#F0F2F1">
+
+            <TextView
+                android:id="@+notas/aproveitamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Aproveitamento"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/aproveitamentoNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/prova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Prova"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/provaNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:background="#F0F2F1"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/substutiva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Substutiva"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/substutivaNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/totalPontos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Total Pontos"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/totalPontosNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:background="#F0F2F1"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/reavaliacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Reavaliação"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/reavaliacaoNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/mediaFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Média Final"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/mediaFinalNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:background="#F0F2F1"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+notas/resultadoFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Resultado Final"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+notas/resultadoFinalNota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:text="Aprovado"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</FrameLayout>

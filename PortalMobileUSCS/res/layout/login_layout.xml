@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/gradient_splash" >
+
+        <RelativeLayout
+            android:id="@+id/conteiner_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:animateLayoutChanges="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/branco_uscs"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- Email Label -->
+
+                <EditText
+                    android:id="@+id/loginMatricula"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edit_text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/matricula_hint"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <!-- Password Label -->
+
+                <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/edit_text"
+                    android:hint="@string/senha_hint"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+                <!-- Login button -->
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_login"
+                    android:text="@string/login"
+                    android:textColor="#fffff0f9" />
+
+                <Button
+                    android:id="@+id/btnLinkRecuperarSenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/recuperar_senha"
+                    android:textColor="#E1A703"
+                    android:textStyle="bold" />
+
+                <!-- Link to Registration Screen -->
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

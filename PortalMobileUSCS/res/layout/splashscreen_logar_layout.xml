@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".activitys.SplashScreen" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/gradient_splash" >
+
+        <RelativeLayout
+            android:id="@+id/conteiner_logar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:animateLayoutChanges="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:id="@+id/loginLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logouscs" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <!-- Login Form -->
+
+                <LinearLayout
+                    android:id="@+id/loginLogar_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/branco_uscs"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <!-- Login button -->
+
+                    <Button
+                        android:id="@+id/btnLogar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_login"
+                        android:text="@string/logar"
+                        android:textColor="#fffff0f9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/FooterBar"
+                    android:background="@color/cinza_uscs" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="10dip"
+                        android:text="@string/site_uscs"
+                        android:textColor="#6F6F6F" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
